@@ -3,5 +3,13 @@ Landing Page com o tema dos filmes do universo Matrix - exercício para o Curso 
 
 Pontos:
 0. Utilizar metodologia BEM para organizar CSS;
-1. Utilizar pre-processador SASS
-1. Utilizar GULP para gerar arquivos de produção
+1. Utilizar pre-processador SASS;
+2. Utilizar GULP para gerar arquivos de produção
+
+Bibliotecas:
+1. gulp
+2. sass
+3. gulp-sass
+4. gulp-rename
+5. gulp-imagemin
+6. gulp-uglify

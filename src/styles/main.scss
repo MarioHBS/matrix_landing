@@ -1,0 +1,19 @@
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    // background-image: url(../images/matrix_1920_1080.jpg);
+    text-align: center;
+    // background-size: cover;
+
+    &__container {
+    }
+}
