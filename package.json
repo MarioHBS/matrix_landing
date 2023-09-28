@@ -1,0 +1,14 @@
+{
+  "name": "curso_ebac-atv-mod21_matrix",
+  "version": "1.0.0",
+  "description": "Landing Page com o tema dos filmes do universo Matrix - exercício para o Curso EBAC do módulo 21",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
