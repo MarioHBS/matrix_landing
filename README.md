@@ -11,5 +11,6 @@ Bibliotecas:
 2. sass
 3. gulp-sass
 4. gulp-rename
-5. gulp-imagemin
+5. gulp-imagemin@7.1.0
 6. gulp-uglify
+7. gulp-sourcemaps

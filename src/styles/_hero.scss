@@ -1,0 +1,16 @@
+.hero {
+    padding: 3vw;
+    min-height: 80vh;
+    // background-image: url(../images/matrix_1920_1080.jpg);
+    text-align: center;
+    // background-size: cover;
+
+    &__container {
+        padding: 8px 16px;
+    }
+
+    &__branding {
+        margin-top: 16px;
+        width: 90%;
+    }
+}
