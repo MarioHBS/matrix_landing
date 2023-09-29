@@ -4,11 +4,13 @@
     height: auto;
     margin: 0 auto;
 } */
+@use 'vars';
 
 .movie {
     padding: 3vw;
     display: block;
     margin: 0 auto;
+    background-color: vars.$backgroundSession;
 
     &__logo, &__cover {
         display: block;
@@ -17,42 +19,34 @@
         margin: 0 auto;
         margin-bottom: 24px;
     }
-/* 
-    &__cover {
-        display: block;
-        width: 95%;
-        height: auto;
-        margin: 0 auto;
-        // align-items: center;
-        // justify-content: center;
-    } */
 
     &__details {
         display: grid;
         width: 95%;
         grid-template-columns: 1fr 1.5fr 1fr;
-        // padding-top: 24px;
         margin: 0 auto;
 
         &__poster {
             width: 200px;
             height: auto;
         }
-
-        &__synopsis { //div: h2 + p
+        //div: h2 + p:
+        &__synopsis { 
             padding: 0 16px;
             text-align: justify;
         }
-
-        &__metadata { //div: (h3 + p)*3
+        //div: (h3 + p)*3:
+        &__metadata {
             padding: 0 16px;
             color: azure;
             background-color: darkslategray;
 
-            .text--big, .title--small {
+            .text--big,
+            .title--small {
                 margin-top: 8px;
                 color: white;
             }
+
             .text--small {
                 margin-top: 4px;
                 color: darken($color: #fff, $amount: 15%);
@@ -62,14 +56,33 @@
 
     &__more-details {
         width: 95%;
-        margin: 16px auto;
-        padding: 8px;
-        background-color: rgb(15, 150, 15);
-        border-radius: 20px;
-        
-        span {
-            display: block;
-            text-align: center;
+        margin: 0 auto;
+
+        &__title {
+            margin: 16px auto 8px;
+            padding: 8px;
+            background-color: vars.$backgroundDetailButton;
+            border-radius: 20px 20px 0 0;
+            cursor: pointer;
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        &__content {
+            padding: 0 8px;
+            height: 0;
+            // display: none;
+            overflow: hidden;
+        }
+
+        &--is-open {
+            .movie__more-details__content {
+                // display: block;
+                height: auto;
+            }
         }
     }
 }
