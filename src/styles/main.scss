@@ -1,5 +1,6 @@
 @use 'vars';
 @use 'hero';
+@use 'movie';
 
 * {
     margin: 0;
@@ -8,7 +9,16 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
     background-color: vars.$background;
+}
+
+.container {
+    max-width: 70%;
+    margin-top: 3vw;
+    border-radius: 3%;
+    background-color: white;
 }
 
 @mixin text($fontSize: 16px) {

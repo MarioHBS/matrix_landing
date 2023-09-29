@@ -1,0 +1,27 @@
+.movie {
+    padding: 3vw;
+    display: block;
+    margin: 0 auto;
+
+    &__cover {
+        display: block;
+        width: 90%;
+        height: auto;
+        // padding: 0 auto;
+        margin: 0 auto;
+        text-align: center;
+        // align-items: center;
+        // justify-content: center;
+    }
+
+    &__details {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        padding-top: 24px;
+
+        &__poster {
+            width: 250px;
+            height: auto;
+        }
+    }
+}
