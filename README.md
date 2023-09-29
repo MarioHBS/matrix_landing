@@ -14,3 +14,10 @@ Bibliotecas:
 5. gulp-imagemin@7.1.0
 6. gulp-uglify
 7. gulp-sourcemaps
+
+<!-- 
+# Seção MOVIES:
+ * cronstruir um carrosel com backdrops;
+ * mosrar poster e mosrar detalhes de nome com sinopse;
+ * abrir dropdown para mostrar mais detalhes como: enredo, elenco principal
+ -->

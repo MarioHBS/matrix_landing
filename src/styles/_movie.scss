@@ -1,27 +1,75 @@
+/* @mixin images() {
+    display: block;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+} */
+
 .movie {
     padding: 3vw;
     display: block;
     margin: 0 auto;
 
+    &__logo, &__cover {
+        display: block;
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+/* 
     &__cover {
         display: block;
-        width: 90%;
+        width: 95%;
         height: auto;
-        // padding: 0 auto;
         margin: 0 auto;
-        text-align: center;
         // align-items: center;
         // justify-content: center;
-    }
+    } */
 
     &__details {
         display: grid;
-        grid-template-columns: 1fr 5fr;
-        padding-top: 24px;
+        width: 95%;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        // padding-top: 24px;
+        margin: 0 auto;
 
         &__poster {
-            width: 250px;
+            width: 200px;
             height: auto;
+        }
+
+        &__synopsis { //div: h2 + p
+            padding: 0 16px;
+            text-align: justify;
+        }
+
+        &__metadata { //div: (h3 + p)*3
+            padding: 0 16px;
+            color: azure;
+            background-color: darkslategray;
+
+            .text--big, .title--small {
+                margin-top: 8px;
+                color: white;
+            }
+            .text--small {
+                margin-top: 4px;
+                color: darken($color: #fff, $amount: 15%);
+            }
+        }
+    }
+
+    &__more-details {
+        width: 95%;
+        margin: 16px auto;
+        padding: 8px;
+        background-color: rgb(15, 150, 15);
+        border-radius: 20px;
+        
+        span {
+            display: block;
+            text-align: center;
         }
     }
 }

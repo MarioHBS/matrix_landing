@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    max-width: 70%;
+    max-width: 75%;
     margin-top: 3vw;
     border-radius: 3%;
     background-color: white;
@@ -27,6 +27,27 @@ body {
     color: vars.$colorMainText;
 }
 
+@mixin title($fontSize: 40px) {
+    @include text($fontSize);
+    // color: ;
+}
+
 .title--big {
-    @include text(44px);
+    @include title(44px);
+}
+.title {
+    @include title();
+}
+.title--small {
+    @include title(28px);
+}
+
+.text--big {
+    @include text(18px);
+}
+.text {
+    @include text();
+}
+.text--small {
+    @include text(12px);
 }
