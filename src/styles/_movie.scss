@@ -23,7 +23,7 @@
     &__details {
         display: grid;
         width: 95%;
-        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-columns: 1fr auto 5fr;
         margin: 0 auto;
 
         &__poster {
@@ -34,10 +34,11 @@
         &__synopsis { 
             padding: 0 16px;
             text-align: justify;
+            max-width: 400px;
         }
         //div: (h3 + p)*3:
         &__metadata {
-            padding: 0 16px;
+            padding: 8px 24px;
             color: azure;
             background-color: darkslategray;
 
