@@ -73,9 +73,8 @@
         }
 
         &__content {
-            padding: 0 8px;
+            // padding: 0 8px;
             height: 0;
-            // display: none;
             overflow: hidden;
         }
 
@@ -83,6 +82,31 @@
             .movie__more-details__content {
                 // display: block;
                 height: auto;
+            }
+        }
+    }
+
+    &__characters {
+        &__list {
+            display: flex;
+            justify-content: space-around;
+            gap: 24px;
+
+            &__item {
+                padding: 16px;
+                background-color: bisque;
+                text-align: center;
+
+                img {
+                    width: 212px;
+                    // height: auto;
+                    aspect-ratio: .76;
+                }
+
+                &:hover {
+                    background-color: brown;
+                    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+                }
             }
         }
     }
