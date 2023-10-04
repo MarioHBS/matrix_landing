@@ -13,3 +13,12 @@ $colorButtonOnBlackHover: #59a369;
 $colorMainText: #040714;
 $colorTextGreen: #59a369;
 $colorTextBlack: #191919;
+
+$-confort: 'Comfortaa', cursive;
+$-dela: 'Dela Gothic One', cursive;
+$-nabla: 'Nabla', cursive;
+$fonts: (
+    "confort": $-confort,
+    "dela": $-dela,
+    "nabla": $-nabla, 
+);

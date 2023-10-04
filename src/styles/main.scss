@@ -1,7 +1,9 @@
-@use 'vars';
+@use 'vars' as *;
 @use 'header';
 @use 'hero';
 @use 'movie';
+@use 'movies';
+@use 'sass:map';
 
 * {
     margin: 0;
@@ -24,7 +26,7 @@
 body {
     // display: flex;
     // justify-content: center;
-    background-color: vars.$background;
+    background-color: $background;
 }
 
 .container {
@@ -37,7 +39,7 @@ body {
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 5px;
-    color: vars.$colorMainText;
+    color: $colorMainText;
 }
 
 @mixin title($fontSize: 40px) {
@@ -61,9 +63,15 @@ body {
         @include title(22px);
     }
 
-    &--on-black {
-        // color: vars.$colorWhite;
-        font-family: Nabla, sans-serif;
+    &--on-hero {
+        // color: $colorWhite;
+        font-family: map-get($fonts, "nabla");
+    }
+
+    &--on-green {
+        color: $colorMainText;
+        text-transform: uppercase;
+        font-family: map-get($fonts, "dela");
     }
 }
 
@@ -85,27 +93,27 @@ body {
     width: 100%;
     height: 60px;
     font-size: 18px;
-    color: vars.$colorTextBlack;
-    background-color: vars.$background1;
+    color: $colorTextBlack;
+    background-color: $background1;
     text-transform: uppercase;
     border-radius: 4px;
     padding: 8px 16px;
     letter-spacing: 1px;
-    border: 1px solid vars.$colorTextBlack;
+    border: 1px solid $colorTextBlack;
     font-weight: bold;
     font-family: Dela, sans-serif;
 
     &:hover {
-        background-color: lighten(vars.$background1, 5%);
+        background-color: lighten($background1, 5%);
     }
 
     &--secondary {
-        color: vars.$colorTextGreen;
-        background-color: vars.$background2;
+        color: $colorTextGreen;
+        background-color: $background2;
     }
 
     &--dark {
-        color: vars.$colorTextGreen;
-        background-color: rgba(vars.$colorTextBlack, .8);
+        color: $colorTextGreen;
+        background-color: rgba($colorTextBlack, .8);
     }
 }

@@ -1,0 +1,32 @@
+@use 'vars';
+
+.movies {
+    display: block;
+    padding: 5.6vw 8vw;
+    margin: 0 auto;
+    background-color: vars.$background1;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+
+    &__poster {
+        // width: 100%;
+        // aspect-ratio: ;
+        width: 200px;
+        height: auto;
+        border: 5px solid vars.$backgroundMetadata;
+        border-radius: 5px;
+
+        &:hover {
+            border: 5px solid vars.$background;
+        }
+    }
+}

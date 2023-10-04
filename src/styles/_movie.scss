@@ -7,14 +7,15 @@
 @use 'vars';
 
 .movie {
-    padding: 5.6vw;
+    padding: 5.6vw 8vw;
     display: block;
     margin: 0 auto;
-    background-color: vars.$background1;
+    background-color: vars.$background2;
 
     &__content {
-        padding: 8px 0;
-        border: 2px solid vars.$colorTextBlack;
+        padding: 24px 8px;
+        border: 1px solid vars.$colorTextBlack;
+        border-style: solid;
         border-radius: 10px;
     }
 
@@ -22,8 +23,8 @@
         display: block;
         width: 450px;
         height: auto;
-        margin: 0 auto;
-        margin-bottom: 24px;
+        margin: 0 auto 36px;
+        // margin-bottom: 24px;
     }
 
     &__details {
