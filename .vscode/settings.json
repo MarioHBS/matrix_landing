@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.port": 5499
+    "liveServer.settings.port": 5499,
+    "workbench.tree.indent": 16,
 }

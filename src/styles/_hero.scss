@@ -1,9 +1,14 @@
+@use 'vars';
+
 .hero {
-    padding: 3vw;
+    display: flex;
+    padding: 5.6vw;
     min-height: 80vh;
-    // background-image: url(../images/matrix_1920_1080.jpg);
-    text-align: center;
-    // background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../images/matrix_1920_1080.jpg);
+    justify-content: center;
+    align-items: end;
+    background-size: cover;
+    // background-color: vars.$background2;
 
     &__content {
         padding: 0;

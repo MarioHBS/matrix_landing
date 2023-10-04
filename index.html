@@ -5,24 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matrix</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dela+Gothic+One&family=Nabla&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./dist/css/style.css">
 </head>
 
 <body>
     <header class="header">
+        <div class="header__content">
+            <h1>
+                <img class="header__logo" src="./src/images/logos/warner-brothers-logo-vector.png" alt="Warner Bros." />
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#all" class="button">TODOS</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#details-matrix" class="button button--dark">HISTÓRICO</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
-    <div class="container">
-        <section class="hero">
-            <div class="hero__content">
-                <h1 class="hero__title title--big">Ao olhar essa imagem de que filme voccê lembra ?</h1>
-                <img src="./src/images/matrix_1920_1080.jpg" alt="Matrix branding" class="hero__branding" />
-            </div>
-        </section>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="title--big-big title--on-black">O que essa imagem te lembra ?</h1>
+            <!-- <img src="./src/images/matrix_1920_1080.jpg" alt="Matrix branding" class="hero__branding" /> -->
+        </div>
+    </section>
 
-        <section class="movie">
+    <secttion id="all" class="movies">
+    </secttion>
+
+    <section id="details-matrix" class="movie movie-matrix">
+        <div class="movie__content">
             <img class="movie__logo" src="./dist/images/logos/logo_matrix.png" alt="Matrix Logo" />
-            <img class="movie__cover" src="./dist/images/backdrops/backdrop_matrix.jpg" alt="Matrix covers" />
             <div class="movie__details">
                 <img src="./dist/images/matrix_poster.jpg" alt="Matrix Poster" class="movie__details__poster" />
                 <div class="movie__details__synopsis">
@@ -43,32 +62,55 @@
                     <p class="text--small">Ação/Aventura, Sci-fi/Fantasia</p>
                     <h3 class="text--big">Portais de Informação</h3>
                     <p class="text--small">IMDB; LETTER; TMDB</p>
-
                 </div>
             </div>
-            <div class="movie__more-details">
-                <div class="movie__more-details__title">
-                    <span class="title--small">mais detalhes</span>
-                </div>
-                <div class="movie__more-details__content">
-                    <ul class="movie__characters__list">
-                        <li class="movie__characters__list__item">
+        </div>
+        <!-- <img class="movie__cover" src="./dist/images/backdrops/backdrop_matrix.jpg" alt="Matrix covers" /> -->
+        <div class="movie__more-details">
+            <div class="movie__more-details__title">
+                <span class="title--small">mais detalhes</span>
+            </div>
+            <div class="movie__more-details__content">
+                <ul class="movie__characters__list">
+                    <li class="movie__characters__list__item">
+                        <div class="card">
                             <img src="./src/images/characters/matrix_neo.webp" alt="Keanu Reeves - Neo" />
-                        </li>
-                        <li class="movie__characters__list__item">
+                            <h2 class="title--smaller">Keanu Reeves</h2>
+                            <h4 class="text--big">Neo</h4>
+                        </div>
+                    </li>
+                    <li class="movie__characters__list__item">
+                        <div class="card">
                             <img src="./src/images/characters/matrix_trinity.jpg" alt="Carrie-Anne Moss - Trinity" />
-                        </li>
-                        <li class="movie__characters__list__item">
+                            <h2 class="title--smaller">Carrie-Anne Moss</h2>
+                            <h4 class="text--big">Trinity</h4>
+                        </div>
+                    </li>
+                    <li class="movie__characters__list__item">
+                        <div class="card">
                             <img src="./src/images/characters/matrix_morpheus.jpg" alt="Laurence Fishbourne - Morpheus" />
-                        </li>
-                        <li class="movie__characters__list__item">
+                            <h2 class="title--smaller">Laurance Fishbourne</h2>
+                            <h4 class="text--big">Morpheus</h4>
+                        </div>
+                    </li>
+                    <li class="movie__characters__list__item">
+                        <div class="card">
                             <img src="./src/images/characters/matrix_agent-smith.webp" alt="Hugo Weaving - Agent Smith" />
-                        </li>
-                    </ul>
-                </div>
+                            <h2 class="title--smaller">Hugo Weaving</h2>
+                            <h4 class="text--big">Agent Smith</h4>
+                        </div>
+                    </li>
+                    <li class="movie__characters__list__item">
+                        <div class="card">
+                            <img src="./src/images/characters/matrix_tank.jpg" alt="Marcus Chong - Tank" />
+                            <h2 class="title--smaller">Marcus Chong</h2>
+                            <h4 class="text--big">Tank</h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <script src="./src/scripts/main.js"></script>
 </body>

@@ -1,0 +1,36 @@
+@use 'vars';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: vars.$background;
+    z-index: 1;
+
+    &__content {
+        display: flex;
+        padding: 8px 24px;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        max-width: 50px;
+        width: 100%;
+        margin: 5px;
+        transition: opacity .5s ease-out;
+    }
+
+    &__links {
+        display: flex;
+
+        &__item {
+            margin: 5px;
+            // transition: opacity .5s ease-out;
+        }
+    }
+
+    .button {
+        height: 50px;
+        
+    }
+}
