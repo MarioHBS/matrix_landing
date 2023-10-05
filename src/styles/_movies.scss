@@ -17,7 +17,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: linear-gradient(#0f0, #000, #0f0);
+        background: linear-gradient(vars.$background1, #000, vars.$background1);
         animation: animate 5s linear infinite;
         z-index: 0;
     }
@@ -36,13 +36,28 @@
         display: block;
         width: calc(6.25vw + 3px);
         height: calc(6.25vw + 3px);
-        background: vars.$background1;
+        background: vars.$colorButtonOnBlackHover;
         z-index: 1;
         transition: 1.5s;
 
         &:hover {
             background: vars.$colorMainText;
             transition: 0s;
+        }
+
+        @media (max-width: vars.$breakpointTablet) {
+            $-size: calc(10vw - 3px);
+            .movies__spans {
+                width: $-size;
+                height: $-size;
+            }
+        }
+        @media (max-width: vars.$breakpointMobile) {
+            $-size: calc(20vw - 3px);
+            .movies__spans {
+                width: $-size;
+                height: $-size;
+            }
         }
     }
 
