@@ -13,121 +13,143 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__content">
-            <h1>
-                <img class="header__logo" src="./src/images/logos/warner-brothers-logo-vector.png" alt="Warner Bros." />
-            </h1>
-            <ul class="header__links">
-                <li class="header__links__item">
-                    <a href="#all" class="button">TODOS</a>
-                </li>
-                <li class="header__links__item">
-                    <a href="#details-matrix" class="button button--dark">HISTÓRICO</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="hero__content">
-            <h1 class="title--big-big title--on-hero">O que essa imagem te lembra ?</h1>
-            <!-- <img src="./src/images/matrix_1920_1080.jpg" alt="Matrix branding" class="hero__branding" /> -->
-        </div>
-    </section>
-
-    <secttion id="all" class="movies">
-        <div class="movies__container">
-            <h1 class="title--big-big title--on-green">A Franquia</h1>
-            <div class="movies__content">
-                <a href="#details-matrix">
-                    <img class="movies__poster" src="./dist/images/matrix_poster.jpg" alt="Matrix logo" />
-                </a>
-                <a href="#details-matrix-reloaded">
-                    <img class="movies__poster" src="./dist/images/matrix_reloaded_poster.jpg" alt="Matrix Reloaded logo" />
-                </a>
-                <a href="#details-matrix-revolutions">
-                    <img class="movies__poster" src="./dist/images/matrix_revolutions_poster.jpg" alt="Matrix Revolutions logo" />
-                </a>
-                <a href="#details-matrix-revolutions">
-                    <img class="movies__poster" src="./dist/images/animatrix_poster.jpg" alt="Animatrix logo" />
-                </a>
-            </div>
-        </div>
-    </secttion>
-
-    <section id="details-matrix" class="movie movie-matrix">
-        <div class="movie__content">
-            <img class="movie__logo" src="./dist/images/logos/logo_matrix.png" alt="Matrix Logo" />
-            <div class="movie__details">
-                <img src="./dist/images/matrix_poster.jpg" alt="Matrix Poster" class="movie__details__poster" />
-                <div class="movie__details__synopsis">
-                    <!-- <h2 class="title">Matrix (1998)</h2> -->
-                    <h3 class="title--small">Sinopse</h3>
-                    <p>
-                        Matrix, lançado em 1999, nos apresenta à Neo (Keanu Reeves), um jovem programador de computador que após sofrer com o mesmo pesadelo várias vezes começa a ter dúvidas sobre a realidade em que vive. Ele acaba descobrindo que é vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas, criando a ilusão de um mundo real.
-                    </p>
-                    <h3 class="title--small">Diretores(as)</h3>
-                    <p>Lilly e Lana Wachowski</p>
-                </div>
-                <div class="movie__details__metadata">
-                    <h3 class="text--big">Lançamento Oficial</h3>
-                    <p class="text--small">29 de Março de 1999</p>
-                    <h3 class="text--big">Classificação</h3>
-                    <p class="text--small">R: menores acompanhados</p>
-                    <h3 class="text--big">Gênero</h3>
-                    <p class="text--small">Ação/Aventura, Sci-fi/Fantasia</p>
-                    <h3 class="text--big">Portais de Informação</h3>
-                    <p class="text--small">IMDB; LETTER; TMDB</p>
-                </div>
-            </div>
-        </div>
-        <!-- <img class="movie__cover" src="./dist/images/backdrops/backdrop_matrix.jpg" alt="Matrix covers" /> -->
-        <div class="movie__more-details">
-            <div class="movie__more-details__title">
-                <span class="title--small">mais detalhes</span>
-            </div>
-            <div class="movie__more-details__content">
-                <ul class="movie__characters__list">
-                    <li class="movie__characters__list__item">
-                        <div class="card">
-                            <img src="./src/images/characters/matrix_neo.webp" alt="Keanu Reeves - Neo" />
-                            <h2 class="title--smaller">Keanu Reeves</h2>
-                            <h4 class="text--big">Neo</h4>
-                        </div>
+    <div class="great-container">
+        <header class="header">
+            <div class="header__content">
+                <h1>
+                    <img class="header__logo" src="./src/images/logos/warner-brothers-logo-vector.png" alt="Warner Bros." />
+                </h1>
+                <ul class="header__links">
+                    <li class="header__links__item">
+                        <a href="#all" class="button">TODOS</a>
                     </li>
-                    <li class="movie__characters__list__item">
-                        <div class="card">
-                            <img src="./src/images/characters/matrix_trinity.jpg" alt="Carrie-Anne Moss - Trinity" />
-                            <h2 class="title--smaller">Carrie-Anne Moss</h2>
-                            <h4 class="text--big">Trinity</h4>
-                        </div>
-                    </li>
-                    <li class="movie__characters__list__item">
-                        <div class="card">
-                            <img src="./src/images/characters/matrix_morpheus.jpg" alt="Laurence Fishbourne - Morpheus" />
-                            <h2 class="title--smaller">Laurance Fishbourne</h2>
-                            <h4 class="text--big">Morpheus</h4>
-                        </div>
-                    </li>
-                    <li class="movie__characters__list__item">
-                        <div class="card">
-                            <img src="./src/images/characters/matrix_agent-smith.webp" alt="Hugo Weaving - Agent Smith" />
-                            <h2 class="title--smaller">Hugo Weaving</h2>
-                            <h4 class="text--big">Agent Smith</h4>
-                        </div>
-                    </li>
-                    <li class="movie__characters__list__item">
-                        <div class="card">
-                            <img src="./src/images/characters/matrix_tank.jpg" alt="Marcus Chong - Tank" />
-                            <h2 class="title--smaller">Marcus Chong</h2>
-                            <h4 class="text--big">Tank</h4>
-                        </div>
+                    <li class="header__links__item">
+                        <a href="#details-matrix" class="button button--dark">HISTÓRICO</a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </header>
+    
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="title--big-big title--on-hero">O que essa imagem te lembra ?</h1>
+                <!-- <img src="./src/images/matrix_1920_1080.jpg" alt="Matrix branding" class="hero__branding" /> -->
+            </div>
+        </section>
+    
+        <secttion id="all" class="movies">
+            <div class="movies__container">
+                <h1 class="title--big-big title--on-green">A Franquia</h1>
+                <div class="movies__content">
+                    <a href="#details-matrix">
+                        <img class="movies__poster" src="./dist/images/matrix_poster.jpg" alt="Matrix logo" />
+                    </a>
+                    <a href="#details-reloaded">
+                        <img class="movies__poster" src="./dist/images/matrix_reloaded_poster.jpg" alt="Matrix Reloaded logo" />
+                    </a>
+                    <a href="#details-matrix-revolutions">
+                        <img class="movies__poster" src="./dist/images/matrix_revolutions_poster.jpg" alt="Matrix Revolutions logo" />
+                    </a>
+                    <a href="#details-matrix-revolutions">
+                        <img class="movies__poster" src="./dist/images/animatrix_poster.jpg" alt="Animatrix logo" />
+                    </a>
+                </div>
+            </div>
+        </secttion>
+    
+        <section id="details-matrix" class="movie movie-matrix">
+            <div class="movie__content">
+                <img class="movie__logo" src="./dist/images/logos/logo_matrix.png" alt="Matrix Logo" />
+                <div class="movie__details">
+                    <img src="./dist/images/matrix_poster.jpg" alt="Matrix Poster" class="movie__details__poster" />
+                    <div class="movie__details__synopsis">
+                        <!-- <h2 class="title">Matrix (1998)</h2> -->
+                        <h3 class="title--small">Sinopse</h3>
+                        <p>
+                            Matrix, lançado em 1999, nos apresenta à Neo (Keanu Reeves), um jovem programador de computador que após sofrer com o mesmo pesadelo várias vezes começa a ter dúvidas sobre a realidade em que vive. Ele acaba descobrindo que é vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas, criando a ilusão de um mundo real.
+                        </p>
+                        <h3 class="title--small">Diretores(as)</h3>
+                        <p>Lilly e Lana Wachowski</p>
+                    </div>
+                    <div class="movie__details__metadata">
+                        <h3 class="text--big">Lançamento Oficial</h3>
+                        <p class="text--small">29 de Março de 1999</p>
+                        <h3 class="text--big">Classificação</h3>
+                        <p class="text--small">R: menores acompanhados</p>
+                        <h3 class="text--big">Gênero</h3>
+                        <p class="text--small">Ação/Aventura, Sci-fi/Fantasia</p>
+                        <h3 class="text--big">Portais de Informação</h3>
+                        <p class="text--small">IMDB; LETTER; TMDB</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <img class="movie__cover" src="./dist/images/backdrops/backdrop_matrix.jpg" alt="Matrix covers" /> -->
+            <div class="movie__more-details">
+                <div class="movie__more-details__title">
+                    <span class="title--small">mais detalhes</span>
+                </div>
+                <div class="movie__more-details__content">
+                    <ul class="movie__characters__list">
+                        <li class="movie__characters__list__item">
+                            <div class="card">
+                                <img src="./src/images/characters/matrix_neo.webp" alt="Keanu Reeves - Neo" />
+                                <h2 class="title--smaller">Keanu Reeves</h2>
+                                <h4 class="text--big">Neo</h4>
+                            </div>
+                        </li>
+                        <li class="movie__characters__list__item">
+                            <div class="card">
+                                <img src="./src/images/characters/matrix_trinity.jpg" alt="Carrie-Anne Moss - Trinity" />
+                                <h2 class="title--smaller">Carrie-Anne Moss</h2>
+                                <h4 class="text--big">Trinity</h4>
+                            </div>
+                        </li>
+                        <li class="movie__characters__list__item">
+                            <div class="card">
+                                <img src="./src/images/characters/matrix_morpheus.jpg" alt="Laurence Fishbourne - Morpheus" />
+                                <h2 class="title--smaller">Laurance Fishbourne</h2>
+                                <h4 class="text--big">Morpheus</h4>
+                            </div>
+                        </li>
+                        <li class="movie__characters__list__item">
+                            <div class="card">
+                                <img src="./src/images/characters/matrix_agent-smith.webp" alt="Hugo Weaving - Agent Smith" />
+                                <h2 class="title--smaller">Hugo Weaving</h2>
+                                <h4 class="text--big">Agent Smith</h4>
+                            </div>
+                        </li>
+                        <li class="movie__characters__list__item">
+                            <div class="card">
+                                <img src="./src/images/characters/matrix_tank.jpg" alt="Marcus Chong - Tank" />
+                                <h2 class="title--smaller">Marcus Chong</h2>
+                                <h4 class="text--big">Tank</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- section.movie>(.movie__content>img.movie__logo+(.movie__details>img.movie__details_poster+(.movie__details_synopsis>h3.title--small)+.movie__details__metadata))+.movie__more-details -->
+        <section id="details-reloaded" class="movie movie-reloaded">
+            <div class="movie__content">
+                <img src="./dist/images/logos/logo_matrix_reloaded.png" alt="Matrix Reloaded Logo" class="movie__logo">
+                <div class="movie__details">
+                    <img src="./dist/images/matrix_reloaded_poster.jpg" alt="Matrix Reloaded Poster" class="movie__details__poster">
+                    <div class="movie__details__synopsis">
+                        <h3 class="title--small">Sinopse</h3>
+                        <p>
+                            Com os novos poderes de Neo, continua a saga de Neo, Morpheus, Trinity contra as máquinas. Neo tentará chegar à Fonte para, assim, libertar sua raça, porém o poderoso sr. Smith fará de tudo para impedi-lo
+                        </p>
+                        <h3 class="title--small">Diretores(as)</h3>
+                        <p>Lilly e Lana Wachowski</p>
+                    </div>
+                    <div class="movie__details__metadata"></div>
+                </div>
+            </div>
+            <div class="movie__more-details"></div>
+        </section>
+    </div>
 
     <script src="./src/scripts/main.js"></script>
     <!-- <script src="./dist/js/script.js"></script> -->

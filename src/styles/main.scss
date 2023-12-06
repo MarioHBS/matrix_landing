@@ -2,6 +2,7 @@
 @use 'header';
 @use 'hero';
 @use 'movie';
+@use 'movie_matrix';
 @use 'movies';
 @use 'sass:map';
 
@@ -26,14 +27,16 @@
 body {
     // display: flex;
     // justify-content: center;
-    background-color: $background;
+    // background-color: $background;
 }
 
-.container {
-    max-width: 75%;
-    margin-top: 3vw;
-    border-radius: 3%;
-    background-color: white;
+.great-container {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    // margin-top: 3vw;
+    // border-radius: 3%;
+    // background-color: white;
 }
 
 @mixin text($fontSize: 16px) {

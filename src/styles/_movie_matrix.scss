@@ -1,0 +1,48 @@
+@use 'vars' as *;
+@use 'sass:map';
+
+.movie {
+    &-matrix {
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../images/background/matrix_2_1920_1200.jpg);
+        justify-content: center;
+        align-items: end;
+        background-size: cover;
+        // z-index: 2;
+    }
+}
+
+.movie-matrix {
+    .movie {
+        &__content {
+            background-color: rgba($color: $background, $alpha: .7);
+            // background-color: black;
+        }
+
+        &__details {
+            // color: white;
+
+            &__synopsis {
+                // h3 {color: white;}
+            }
+        }
+    }
+}
+
+.movie-reloaded {
+    .movie {
+        &__content {
+            background-color: rgba($color: $background2, $alpha: .9);
+        }
+        &__details {
+            color: $colorTextGreen;
+
+            &__metadata {
+                background-color: $background;
+            }
+        }
+    }
+}
+
+.movie.movie-reloaded {
+    background-color: $background1;
+}
